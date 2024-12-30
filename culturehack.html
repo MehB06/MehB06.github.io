@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultureHack - Tajdeed - Mehdi Belhadj</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #0a0a0a;
+            font-family: 'Inter', sans-serif;
+            color: white;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease-in forwards;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .page-title {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #ffffff, #a0a0a0);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+            text-align: center;
+        }
+
+        .project-subtitle {
+            font-size: 1.5rem;
+            color: #6246ea;
+            text-align: center;
+            margin-bottom: 40px;
+            font-weight: 600;
+        }
+
+        .section {
+            background: rgba(74, 78, 105, 0.1);
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            border: 1px solid rgba(98, 70, 234, 0.1);
+        }
+
+        .section-title {
+            font-size: 1.4rem;
+            color: #6246ea;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .feature-list, .benefits-list, .contributors-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .feature-list li, .benefits-list li {
+            margin-bottom: 15px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .feature-list li:before, .benefits-list li:before {
+            content: "•";
+            color: #6246ea;
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .contributors-list li {
+            margin-bottom: 12px;
+            padding: 8px 16px;
+            background: rgba(98, 70, 234, 0.1);
+            border-radius: 6px;
+            transition: all 0.3s ease;
+        }
+
+        .contributors-list li:hover {
+            background: rgba(98, 70, 234, 0.2);
+        }
+
+        .event-details {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .detail-item {
+            background: rgba(98, 70, 234, 0.1);
+            padding: 10px 20px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .skills-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 20px;
+        }
+
+        .skill-tag {
+            background: rgba(98, 70, 234, 0.2);
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            color: #a0a0a0;
+        }
+
+        .back-btn {
+            background-image: linear-gradient(135deg, #4a4e69, #2a2d3d);
+            color: white;
+            padding: 12px 28px;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-block;
+            font-weight: 500;
+            margin-top: 30px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .back-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        .github-link {
+            color: #6246ea;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .github-link:hover {
+            color: #4a4e69;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .page-title {
+                font-size: 2rem;
+            }
+            .project-subtitle {
+                font-size: 1.2rem;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="page-title">CultureHack 2024</h1>
+        <h2 class="project-subtitle">Tajdeed: Renewal and Revitalisation of Arabic Calligraphy and Cultural Heritage</h2>
+
+        <div class="section">
+            <div class="event-details">
+                <span class="detail-item">📅 November 20, 2024</span>
+                <span class="detail-item">🏫 King's College London</span>
+                <span class="detail-item">👥 Team .com</span>
+            </div>
+            <p>A cultural project bridging the gap between tradition and modernity, introducing young Arab diaspora individuals in London to the valuable tradition of Arabic calligraphy through workshops and digital experiences.</p>
+            <p>Project Repository: <a href="https://github.com/OguzhanCOG/Tajdeed" class="github-link" target="_blank">GitHub</a></p>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Team Contributors</h3>
+            <ul class="contributors-list">
+                <li>Mehdi Belhadj</li>
+                <li>Oguzhan Cagirir</li>
+                <li>Dmytro Syzonenko</li>
+                <li>Conor Brennan</li>
+                <li>Youmna Al-Jazy</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Key Features</h3>
+            <ul class="feature-list">
+                <li><strong>In-person Workshops:</strong> Three main workshops covering history of calligraphy, traditional Arabic writing, and Calligraphy+Graffiti with "Calligraphiti" concepts</li>
+                <li><strong>Digital Expansion:</strong> Educational masterclasses and online seminars for worldwide accessibility</li>
+                <li><strong>Community Building:</strong> Platform for connecting individuals with similar cultural interests</li>
+                <li><strong>Calligraphy Kits:</strong> Personalized tools including qalam and ink for workshops and online purchase</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Technical Implementation</h3>
+            <p>Developed a full-stack system for the CMCI department in under 5 hours featuring:</p>
+            <ul class="feature-list">
+                <li>PostgreSQL database hosted on AWS</li>
+                <li>Backend powered by Python, Flask, and PyTorch</li>
+                <li>Clean UI styled with CSS</li>
+                <li>Integration of NeuralFusionII for real-time course summaries</li>
+            </ul>
+            <div class="skills-tags">
+                <span class="skill-tag">Large Language Models</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">PyTorch</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">Feature Engineering</span>
+                <span class="skill-tag">Attention Mechanisms</span>
+            </div>
+        </div>
+
+        <div class="section">
+            <h3 class="section-title">Benefits & Social Impact</h3>
+            <ul class="benefits-list">
+                <li><strong>Cultural Heritage Preservation:</strong> Helping young Arabs reconnect with their heritage creatively</li>
+                <li><strong>Identity Strengthening:</strong> Providing Arabs living abroad with a stronger sense of cultural connection</li>
+                <li><strong>Community Creation:</strong> Promoting communication across generations within the diaspora</li>
+                <li><strong>Creative Innovation:</strong> Demonstrating how traditional cultural heritage can adapt in the digital age</li>
+            </ul>
+        </div>
+
+        <div class="text-center">
+            <a href="hackathons.html" class="back-btn">Back to Hackathons</a>
+        </div>
+    </div>
+</body>
+</html>
